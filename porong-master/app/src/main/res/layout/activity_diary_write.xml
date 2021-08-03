@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:clipToPadding="false">
+
+    <EditText
+        android:id="@+id/diary_content"
+        android:layout_width="339dp"
+        android:layout_height="342dp"
+        android:layout_marginTop="144dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="100"
+        android:minLines="10"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Spinner
+        android:id="@+id/diary_feeling"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:entries="@array/feeling"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_title" />
+
+    <TextView
+        android:id="@+id/diary_date"
+        android:layout_width="108dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="center_vertical"
+        android:hint="날짜를 선택하세요"
+        app:layout_constraintBottom_toTopOf="@+id/diary_content"
+        app:layout_constraintEnd_toStartOf="@+id/date_select"
+        app:layout_constraintTop_toBottomOf="@+id/diary_title"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <ImageView
+        android:id="@+id/date_select"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:onClick="OnClickHandler"
+        app:layout_constraintBottom_toTopOf="@+id/diary_content"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/diary_title"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/calender" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="25dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        android:text="날짜"
+        app:layout_constraintEnd_toStartOf="@+id/diary_date"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="36dp"
+        android:text="기분"
+        app:layout_constraintBottom_toTopOf="@+id/diary_content"
+        app:layout_constraintEnd_toStartOf="@+id/diary_feeling" />
+
+    <Button
+        android:id="@+id/diary_cancleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="취소"
+        app:layout_constraintEnd_toStartOf="@+id/diary_saveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/diary_content" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="24dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="96dp"
+        android:text="제목"
+        app:layout_constraintEnd_toStartOf="@+id/diary_title"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/diary_saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:onClick="saveBtnClicked"
+        android:text="저장"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_content" />
+
+    <EditText
+        android:id="@+id/diary_title"
+        android:layout_width="292dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="74dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:text="DIARY"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/porongLogo2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/porongLogo2"
+        android:layout_width="88dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/diary_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        app:srcCompat="@mipmap/porongicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

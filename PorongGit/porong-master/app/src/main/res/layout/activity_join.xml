@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/backgroundcolor"
+    android:orientation="horizontal"
+    tools:ignore="DuplicateIds">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundcolor"
+>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:text="추가 정보"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_password_confirm" />
+
+        <TextView
+            android:id="@+id/idTextView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="생년월일"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/join_birth"
+            app:layout_constraintStart_toStartOf="@+id/join_birth" />
+
+        <CheckBox
+            android:id="@+id/join_married"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:text="결혼을 하셨나요?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/join_roommate"
+            app:layout_constraintTop_toBottomOf="@+id/join_roommate" />
+
+        <Spinner
+            android:id="@+id/join_job"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#FFFFFF"
+            android:entries="@array/jobs"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBaseline_toBaselineOf="@+id/idTextView16"
+            app:layout_constraintEnd_toEndOf="@+id/join_gender"
+            app:layout_constraintStart_toEndOf="@+id/idTextView12" />
+
+        <TextView
+            android:id="@+id/idTextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="직업"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/join_job"
+            app:layout_constraintTop_toBottomOf="@+id/idTextView17" />
+
+        <CheckBox
+            android:id="@+id/join_roommate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="27dp"
+            android:text="함께 사는 사람이 있나요?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/idTextView16"
+            app:layout_constraintTop_toBottomOf="@+id/join_job" />
+
+        <CheckBox
+            android:id="@+id/join_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="자식이 있으신가요?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/join_finish"
+            app:layout_constraintStart_toStartOf="@+id/join_married" />
+
+        <TextView
+            android:id="@+id/idTextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="283dp"
+            android:layout_marginBottom="282dp"
+            android:text="성별"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/join_finish"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/join_password" />
+
+        <RadioGroup
+            android:id="@+id/join_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginBottom="28dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/join_job"
+            app:layout_constraintStart_toEndOf="@+id/idTextView17">
+
+            <RadioButton
+                android:id="@+id/join_woman"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="여자" />
+
+            <RadioButton
+                android:id="@+id/join_man"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="남자" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="328dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:text="* 는 필수 입력 항목입니다."
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/idTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="344dp"
+            android:text="이메일*"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/porongicon" />
+
+        <TextView
+            android:id="@+id/idTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="비밀번호*"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/join_password"
+            app:layout_constraintStart_toStartOf="@+id/join_password" />
+
+        <TextView
+            android:id="@+id/idTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="13dp"
+            android:text="비밀번호 확인*"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/join_password"
+            app:layout_constraintTop_toBottomOf="@+id/join_password" />
+
+        <TextView
+            android:id="@+id/idTextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:text="이름*"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/join_name"
+            app:layout_constraintStart_toStartOf="@+id/join_name" />
+
+        <EditText
+            android:id="@+id/join_email"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="75dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="이메일을 입력하세요"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/join_name"
+            app:layout_constraintEnd_toEndOf="@+id/join_name"
+            app:layout_constraintStart_toStartOf="@+id/join_name" />
+
+        <EditText
+            android:id="@+id/join_name"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="121dp"
+            android:layout_marginBottom="121dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="이름을 입력하세요"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/idTextView7"
+            app:layout_constraintEnd_toEndOf="@+id/join_password"
+            app:layout_constraintStart_toStartOf="@+id/idTextView6"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="JOIN IN"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/join_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="가입 완료"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/join_child" />
+
+        <EditText
+            android:id="@+id/join_password"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="530dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginBottom="530dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="비밀번호를 입력하세요"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/join_child"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/join_password_confirm"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginBottom="196dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="비밀번호를 한 번 더 입력하세요"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="@+id/idTextView17"
+            app:layout_constraintEnd_toEndOf="@+id/join_birth"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/idTextView7"
+            app:layout_constraintTop_toBottomOf="@+id/join_email"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="174dp"
+            android:layout_height="217dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/d" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            android:text="PORONG"
+            android:textColor="#040404"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/join_birth"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="736dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="YYYY/MM/DD"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

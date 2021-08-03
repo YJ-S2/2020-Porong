@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor">
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="286dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="우울증 자가진단 테스트"
+        android:textColor="#070000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="338dp"
+        android:layout_height="536dp"
+        android:layout_weight="1"
+        android:background="#95d5cd"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test"
+        tools:ignore="DuplicateIds">
+
+
+        <LinearLayout
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundcolor"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/checkList1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="거의 하루 종일 우울하고 가라앉은 기분이다."
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="일이나 취미, 대인관계 등에 관심이나 즐거움이 느껴지지 않는다."
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList3"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="피로가 쉽게 느껴지고 활동성이 떨어졌다"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList4"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="집중력과 주의력이 저하하고 있다. "
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList5"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="자신은 안된다는 생각이 들고 자신감이 없다."
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList6"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="'다 내 잘못이다'라는 죄책감과 '나는 가치 없는 사람이다' 라는 생각이 계속 든다."
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList7"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="미래에 대한 희망이 없다."
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList8"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="자살하고 싶다는 생각에 얽매여서 자해를 한 적이 있다."
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList9"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="불면증이 지나치게 심해졌다."
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkList10"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="식욕이 저하하고 있다."
+                android:textSize="17sp" />
+
+
+
+            <Button
+                android:id="@+id/resultBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="결과 확인하러 가기"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="77dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="572dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/d" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="해당된다고 생각하는 항목에 체크하세요."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

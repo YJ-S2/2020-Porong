@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feeling">
+        <item>좋음</item>
+        <item>보통</item>
+        <item>화남</item>
+        <item>우울</item>
+    </string-array>
+</resources>

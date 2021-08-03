@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "377758189041",
+    "firebase_url": "https://porong-3befb.firebaseio.com",
+    "project_id": "porong-3befb",
+    "storage_bucket": "porong-3befb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377758189041:android:4ca1f4a4276bdf9b79b050",
+        "android_client_info": {
+          "package_name": "hanium.porong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377758189041-0viq76ufl7nhe7hu5iq19n7cnk82kh7p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hanium.porong",
+            "certificate_hash": "d05684a5330daea2d9c954b9e7ee5b12a0ab5fdc"
+          }
+        },
+        {
+          "client_id": "377758189041-snv71kikk3c6jn38k9dkb54sgbgfbvmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs8L3BinTkTOihc8efBSKNHkrSdM40a6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377758189041-snv71kikk3c6jn38k9dkb54sgbgfbvmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

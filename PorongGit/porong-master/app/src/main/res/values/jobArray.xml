@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jobs">
+        <item>[선택]</item>
+        <item>학생</item>
+        <item>주부</item>
+        <item>회사원</item>
+        <item>프리랜서</item>
+        <item>교사/교수</item>
+        <item>공무원</item>
+        <item>의사/간호사</item>
+        <item>기타</item>
+    </string-array>
+</resources>
